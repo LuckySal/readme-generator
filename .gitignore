@@ -1,3 +1,9 @@
+# Testing
+readme-template.md
+
+# MacOS
+.DS_Store
+
 # Logs
 logs
 *.log
