@@ -46,7 +46,6 @@ ${data.usage}
 
 ## License
 
-${renderLicenseBadge(data.license)}
 ${renderLicenseLink(data.license)}
 ${renderLicenseSection(data.license)}
 
@@ -64,7 +63,7 @@ To run tests for this application, run the following command:
 
 If you have questions, please contact me at:
 
-[${data.username}](https://github.com/${data.username}) \([Email](mailto:${data.email}\)
+[${data.username}](https://github.com/${data.username}) \([Email](mailto:${data.email})\)
 `;
 }
 

@@ -55,7 +55,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFileSync(fileName, data);
+    fs.writeFileSync(`./readme-files/${fileName}`, data);
     console.log(`Created file ${fileName} successfully.`);
 }
 
@@ -70,12 +70,10 @@ function init() {
             let i = 1;
             do {
                 try {
-                    fs.accessSync(filename, fs.constants.F_OK);
-                    console.log('File already exists');
+                    fs.accessSync(`./readme-files/${filename}`, fs.constants.F_OK);
                     isDuplicateFile = true;
                     filename = `README(${i++}).md`;
                   } catch (err) {
-                    console.error('File does not exist');
                     isDuplicateFile = false;
                   }
             } while (isDuplicateFile);
